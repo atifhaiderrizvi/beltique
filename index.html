@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="BELTIQUE — premium leather belts crafted for your style." />
+    <meta name="theme-color" content="#15130f" />
+    <title>BELTIQUE — Crafted for Your Style</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-transition" aria-hidden="true"></div>
+    <div class="announcement">COMPLIMENTARY SHIPPING ON ORDERS OVER $75 <span>•</span> EASY 30-DAY RETURNS</div>
+
+    <header class="site-header" id="site-header">
+      <a class="wordmark" href="#home" aria-label="BELTIQUE home">BELTIQUE<span>®</span></a>
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="#shop" data-nav="shop">SHOP</a>
+        <a href="#shop" data-filter-link="Men">MEN</a>
+        <a href="#shop" data-filter-link="Women">WOMEN</a>
+        <a href="#collections">COLLECTIONS</a>
+        <a href="#story">ABOUT</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" id="search-button" aria-label="Search products" title="Search"><i data-lucide="search"></i></button>
+        <button class="icon-button account-button" aria-label="Open account" title="Account"><i data-lucide="user-round"></i></button>
+        <button class="icon-button bag-button" aria-label="Open bag" title="Shopping bag">
+          <i data-lucide="shopping-bag"></i><span class="bag-count" aria-live="polite">0</span>
+        </button>
+        <button class="menu-button" aria-label="Open menu" aria-expanded="false"><i data-lucide="menu"></i></button>
+      </div>
+    </header>
+
+    <main id="app" tabindex="-1"></main>
+
+    <footer class="site-footer" id="contact">
+      <div class="footer-top">
+        <a class="wordmark footer-wordmark" href="#home">BELTIQUE<span>®</span></a>
+        <p>Objects of daily ritual, made beautifully.</p>
+        <div class="social-links" aria-label="Social media">
+          <a href="https://www.instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+          <a href="https://www.facebook.com" target="_blank" rel="noreferrer" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+          <a href="https://www.pinterest.com" target="_blank" rel="noreferrer" aria-label="Pinterest"><i data-lucide="pin"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div><h3>SHOP</h3><a href="#shop">All belts</a><a href="#shop" data-filter-link="Men">Men</a><a href="#shop" data-filter-link="Women">Women</a><a href="#collections">Signature collection</a></div>
+        <div><h3>ABOUT</h3><a href="#story">Our story</a><a href="#why">Craft</a><a href="#journal">Journal</a><a href="#contact">Stockists</a></div>
+        <div><h3>HELP</h3><button data-help="Size guide">Size guide</button><button data-help="Shipping & returns">Shipping &amp; returns</button><button data-help="Care guide">Care guide</button><button data-help="Contact concierge">Contact concierge</button></div>
+        <div><h3>CLIENT SERVICES</h3><a href="mailto:hello@beltique.example">hello@beltique.example</a><a href="tel:+18005550189">+1 800 555 0189</a><span>Mon–Fri · 9am–6pm EST</span></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 BELTIQUE. ALL RIGHTS RESERVED.</span><div><button data-help="Privacy policy">PRIVACY POLICY</button><button data-help="Terms & conditions">TERMS</button></div></div>
+    </footer>
+
+    <aside class="cart-drawer" aria-label="Shopping bag" aria-hidden="true">
+      <div class="drawer-head"><div><span class="eyebrow">YOUR SELECTION</span><h2>Shopping Bag <span class="drawer-count">0</span></h2></div><button class="close-drawer" aria-label="Close bag"><i data-lucide="x"></i></button></div>
+      <div class="cart-lines"></div>
+      <div class="drawer-empty"><i data-lucide="shopping-bag"></i><p>Your bag is waiting.</p><button class="text-link continue-shopping">Continue shopping <i data-lucide="arrow-up-right"></i></button></div>
+      <div class="drawer-summary">
+        <form class="promo-form"><label for="promo-code">PROMO CODE</label><div><input id="promo-code" placeholder="ENTER CODE" autocomplete="off" /><button>APPLY</button></div></form>
+        <div class="summary-row"><span>SUBTOTAL</span><strong class="cart-subtotal">$0</strong></div>
+        <p class="shipping-note">Shipping and taxes are calculated at checkout.</p>
+        <button class="button button-dark checkout-button">SECURE CHECKOUT <i data-lucide="arrow-right"></i></button>
+      </div>
+    </aside>
+    <div class="overlay" aria-hidden="true"></div>
+
+    <dialog class="search-dialog">
+      <button class="modal-close" aria-label="Close search"><i data-lucide="x"></i></button>
+      <p class="eyebrow">FIND YOUR FAVOURITE</p>
+      <form class="search-form"><label for="search-input">Search the collection</label><div><i data-lucide="search"></i><input id="search-input" placeholder="Try ‘black leather’" autocomplete="off" /><button>SEARCH</button></div></form>
+      <div class="search-suggestions"><span>POPULAR:</span><button data-search-suggest="black">Classic Black</button><button data-search-suggest="signature">Signature Buckle</button><button data-search-suggest="gift">Gift card</button></div>
+    </dialog>
+
+    <dialog class="simple-dialog"><button class="modal-close" aria-label="Close"><i data-lucide="x"></i></button><div class="simple-dialog-content"></div></dialog>
+    <div class="toast-region" aria-live="polite" aria-atomic="true"></div>
+
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+      <a href="#home"><i data-lucide="house"></i><span>HOME</span></a>
+      <a href="#shop"><i data-lucide="grid-2x2"></i><span>SHOP</span></a>
+      <button class="mobile-search"><i data-lucide="search"></i><span>SEARCH</span></button>
+      <button class="mobile-bag"><i data-lucide="shopping-bag"></i><span>BAG</span></button>
+    </nav>
+
+    <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
